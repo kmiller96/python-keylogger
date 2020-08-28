@@ -1,0 +1,16 @@
+Fixes:
+    [X] Remove "shift" keypresses from log (it's captured in the logged character)
+    [X] Replace "space" with an actual whitespace character.
+    [X] Get the keylogger to be a separate thread (required so that it can count down and log after defined amount of time)
+
+Upgrades:
+    [X] Log text typed in quick succession as a single line.
+    [ ] Better interpret character combos (e.g. CTRL+C, CTRL+V, ALT+TAB, etc.).
+    [ ] Replace capitalised characters (S) with a control code (shift+s) if they are single-character logs.
+    [X] Replace "enter" with "[ENTER]\n"
+    [X] For quick-succession writes, let the backspace character _remove_ keypresses
+    [X] Configure the keylogger using an ini file.
+
+Extensions:
+    [X] Log keypresses to a file instead of STDOUT.
+    [ ] Figure out if using VIM bindings instead of actual typing text.
